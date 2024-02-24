@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <main>
+        <h1>Feedback Survey Form</h1>
+        <form id="survey-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name ">
+            <placeholder="Enter your name"/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your Mail id">
+
+            <label for="email">Phone Number:</label>
+            <input type="Number" id="Phone NUmber" name="email" min="6" max="10" placeholder="Enter Your Phone NUmber">
+
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="150" placeholder=" Enter your age">
+            <label for="feedback-type">Gender:</label>
+            <select id="feedback-type" name="feedback-type">
+                <option value="positive">Male</option>
+                <option value="negative">Female</option>
+                <option value="negative">Other</option>
+
+            </select>
+            <label for="feedback-type">Which one Best Describes You?:</label>
+            <select id="feedback-type" name="feedback-type">
+                <option value="positive">Student</option>
+                <option value="negative">Intern</option>
+                <option value="suggestion">Professional</option>
+            </select>
+
+            <fieldset>
+                <legend>Programming Languages Known:</legend>
+                <input type="checkbox" id="service1" name="services" value="service1">
+                <label for="service1">Python</label><br>
+                <input type="checkbox" id="service2" name="services" value="service2">
+                <label for="service2">java</label><br>
+                <input type="checkbox" id="service3" name="services" value="service3">
+                <label for="service3">C++</label><br>
+                <input type="checkbox" id="service2" name="services" value="service2">
+                <label for="service2">React Js</label><br>
+                <input type="checkbox" id="service2" name="services" value="service2">
+                <label for="service2">java script</Script></label><br>
+                <input type="checkbox" id="service2" name="services" value="service2">
+                <label for="service2">C++</label><br>
+            </fieldset>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+</body>
+</html>
